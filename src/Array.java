@@ -12,6 +12,9 @@ public class Array {
         arr1[0] = "wunyu"; //填入數值
         System.out.println(arr1[0]);
 
+        //create 2D array
+        int[][] my2Darray = new int[10][10]; //建立10*10的array
+
 
 
         //arrayList 可以調整array的長度
