@@ -1,18 +1,11 @@
-import java.text.DecimalFormat;
-import java.util.Scanner;
+
 
 public class Main {
+    public static void main(String[] args) {
+        Constructor_circle c = new Constructor_circle();
+        System.out.println(c.radius); //return 0.5
+        Constructor_circle c2 = new Constructor_circle(10);
+        System.out.println(c2.radius); //return 10
+    }
 
-        private static final DecimalFormat DF = new DecimalFormat("0.00");
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("please input your weight(kg):");
-            double weight = scanner.nextDouble();
-            System.out.print("please input your height(m):");
-            double height = scanner.nextDouble();
-
-
-            double bmi_value = Double.parseDouble(DF.format(weight/(height*height)) );
-            System.out.println("you BMI is:"+ (bmi_value));
-        }
     }
