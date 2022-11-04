@@ -1,11 +1,13 @@
+import javax.swing.*;
+import java.security.cert.TrustAnchor;
 
 public class Main {
     public static void main(String[] args) {
-        Student s = new Student(); //default setting
-        s.hello();
-        System.out.println(s.weight);
-        Student s2 = new Student("wunyu",25,"taichung", "123@gmail.com",30);
-        System.out.println(s2.weight);
+        JFrame window = new JFrame();
+        window.setSize(500,500);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setContentPane(new MyPane());
+        window.setVisible(true);
     }
 
     }
