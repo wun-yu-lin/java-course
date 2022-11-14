@@ -2,10 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
-public class Main extends JPanel implements KeyListener {
+public class Main extends JPanel implements MouseListener {
     public Main(){
-        addKeyListener(this);
+        addMouseListener(this);
     }
     @Override
     public void paintComponent(Graphics g){
@@ -20,18 +22,29 @@ public class Main extends JPanel implements KeyListener {
     }
 
     @Override
-    public void keyTyped(KeyEvent e) {
-        System.out.println("key typed: "+e.getKeyChar());
-    }
-
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-        System.out.println("key Pressed: "+e.getKeyChar());
+    public void mouseClicked(MouseEvent e) {
+        //get MouseClick address
+        System.out.println(e.getX());
+        System.out.println(e.getY());
     }
 
     @Override
-    public void keyReleased(KeyEvent e) {
-        System.out.println("key Released: "+e.getKeyChar());
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
     }
 }
