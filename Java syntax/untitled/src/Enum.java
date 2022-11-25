@@ -1,0 +1,4 @@
+public enum Enum {
+    CANDIAN, MEXICAN, JAPANESE, CHINESE, KOREAN, AMERICAN
+}
+
